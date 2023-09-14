@@ -36,7 +36,7 @@ export default function Home() {
   const pictureData = readData();
 
   return (
-    <main className="w-full columns-1 gap-6 p-10 md:columns-2 xl:max-w-7xl xl:columns-4 xl:px-0">
+    <main className="w-full columns-1 gap-6 p-6 md:columns-2 xl:max-w-7xl xl:columns-4 xl:px-0">
       {pictureData}
     </main>
   );
