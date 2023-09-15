@@ -10,6 +10,7 @@ export default function Home() {
       pictureHtmlArray.push(
         <Link href={`/gallery/${i}`}>
           <div className="relative">
+            <div className="absolute inset-0 transition duration-300 hover:bg-slate-200 hover:bg-opacity-60"></div>
             <Image
               width={0}
               height={0}
@@ -17,14 +18,16 @@ export default function Home() {
                 width: '100%',
                 minHeight: '100%',
                 maxHeight: '100%',
-                padding: '0 0 24px 0',
+                margin: '0 0 24px 0',
               }}
               sizes="100vw"
               alt={`Gallery image ${i}`}
               src={p.images.thumbnail.slice(1)}
             />
             <div className="absolute bottom-8 left-3 text-white">
-              <h1 className="font-bold md:text-xl xl:text-2xl">{p.name}</h1>
+              <h1 className="text-xl font-bold md:text-2xl xl:text-2xl">
+                {p.name}
+              </h1>
               <h1 className="md:text-md">{p.artist.name}</h1>
             </div>
           </div>

@@ -40,7 +40,7 @@ export default function ImageHero({
           width={0}
           height={0}
           style={{
-            width: '60%',
+            width: '70%',
             height: 'auto',
           }}
           sizes="100vw"
@@ -86,7 +86,7 @@ export default function ImageHero({
   };
 
   return (
-    <div className="relative m-auto mb-40 w-full md:max-w-3xl">
+    <div className="relative m-auto mb-40 w-full">
       <ResponsiveGalleryImage />
       <div className="absolute bottom-0 left-0 block h-20 w-3/4 bg-white p-4 md:left-auto md:right-0 md:top-0 md:h-fit md:w-3/5 md:px-12 md:pb-10 md:pt-0">
         <h1 className="mb-4 text-3xl font-semibold md:text-6xl">
