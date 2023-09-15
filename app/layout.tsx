@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex min-h-screen flex-col items-center ${libre.className}`}
+        className={`relative flex min-h-screen flex-col items-center ${libre.className}`}
       >
         <Header />
         {children}
